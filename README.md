@@ -47,7 +47,9 @@ Now XSS Time, better to copy endpoints file to xss scanning tool directory
      ```bash
      python3 main.py -f endpoints.txt -o vulnerabilities.txt -t 10
      ```
-     
+    For individual IP's from Subdomains:-
+     cat subdomains.txt | xargs -I {} host {} | awk '/has address/ {print $4}' > ips.txt
+
      ## <a name="Recon_on_wildcard_domain">Recon on wildcard domain</a>  
 
 - [ ] Run amass  
