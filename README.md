@@ -50,6 +50,10 @@ Now XSS Time, better to copy endpoints file to xss scanning tool directory
     For individual IP's from Subdomains:-
      cat subdomains.txt | xargs -I {} host {} | awk '/has address/ {print $4}' > ips.txt
 
+Wordpress Websites
+WPSCAN full command:- sudo wpscan --url https://cogniron.com/  -e at,ap,cb,dbe --api-token rzp6gVsU35jbCTQM6xdJ5204r7Vs5iaYbKHXRCmyDf4 --rua --force
+
+
      ## <a name="Recon_on_wildcard_domain">Recon on wildcard domain</a>  
 
 - [ ] Run amass  
